@@ -47,3 +47,9 @@ document.writeln(bS + '<br>');
 let fS = cgpa.toString();
 
 // Try Integer to string, String to Number(Float);
+
+// Number Function
+document.writeln("String expressed with number: " + Number("ddsds")+ '<br>');
+document.writeln("Number expressed in number: " + Number("434")+ '<br>');
+document.writeln("Number expressed in string: " + Number("    24    ")+ '<br>' );
+document.writeln("Number expressed in Boolean:" + Number(true)+ '<br>');
