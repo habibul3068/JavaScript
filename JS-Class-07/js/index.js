@@ -21,12 +21,24 @@ function messageButton2(){
 }
 
 var paraVar = document.querySelector('#paraId');
-// Change CSS dynamically
+// // Change CSS dynamically
+// function addStyle(){
+//     paraVar.style.color      = 'red';
+//     paraVar.style.fontSize   = '3rem';
+//     paraVar.style.fontWeight = 'bold';
+//     paraVar.style.fontStyle  = 'italic';
+// }
+
+// function removeStyle(){
+//     paraVar.style = " ";
+// }
+
+// Better approach
+var paraVar = document.querySelector('#paraId');
 function addStyle(){
-    paraVar.style.color      = 'red';
-    paraVar.style.fontSize   = '3rem';
-    paraVar.style.fontWeight = 'bold';
-    paraVar.style.fontStyle  = 'italic';
+    paraVar.classList = "";
+    paraVar.classList.add("para-list");
+    console.log(paraVar.classList);
 }
 
 function removeStyle(){
